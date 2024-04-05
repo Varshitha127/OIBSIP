@@ -32,11 +32,11 @@ def calculate_bmi():
     except ValueError:
         messagebox.showerror("Error", "Please enter valid numeric values for age, weight, and height.")
 
-# Create the main window
+# to Create the main window
 root = tk.Tk()
 root.title("BMI Calculator")
 
-# Create labels and entries for age, gender, weight, and height
+# to Create labels and entries for age, gender, weight, and height
 age_label = tk.Label(root, text="Age:")
 age_label.grid(row=0, column=0, padx=10, pady=5)
 age_entry = tk.Entry(root)
@@ -59,16 +59,16 @@ height_label.grid(row=3, column=0, padx=10, pady=5)
 height_entry = tk.Entry(root)
 height_entry.grid(row=3, column=1, padx=10, pady=5)
 
-# Create button to calculate BMI
+# to Create button to calculate BMI
 calculate_button = tk.Button(root, text="Calculate BMI", command=calculate_bmi)
 calculate_button.grid(row=4, column=0, columnspan=2, pady=10)
 
-# Create labels to display BMI result and interpretation
+# to Create labels to display BMI result and interpretation
 result_label = tk.Label(root, text="")
 result_label.grid(row=5, column=0, columnspan=2)
 
 interpretation_label = tk.Label(root, text="")
 interpretation_label.grid(row=6, column=0, columnspan=2)
 
-# Start the Tkinter event loop
+#to Start the Tkinter event loop
 root.mainloop()
